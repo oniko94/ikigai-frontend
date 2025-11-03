@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
 
-export const useStore = defineStore("game", {
+export const useStore = defineStore("phase", {
   state: () => ({
     currentPhase: 0,
-    collectedData: {},
+    phase: {},
     direction: "forward",
     phases: [
       { title: "Пошук Координат" },
@@ -18,9 +18,10 @@ export const useStore = defineStore("game", {
   },
 
   actions: {
-    completePhase(data) {
+    finishPhase(data) {
       if (this.currentPhase < this.phases.length - 1) {
         this.direction = "forward";
+        this.phase.data = data;
         this.currentPhase++;
       } else {
         console.log(`Results: ${this.collectedData}`);
