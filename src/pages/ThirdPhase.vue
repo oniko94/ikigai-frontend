@@ -20,7 +20,9 @@ const emit = defineEmits(["phaseComplete"]);
 const survey = ref({});
 
 const groupResults = (data) => {
-  const ikigai, tools, holes = [], [], [];
+  const ikigai = [];
+  const tools = [];
+  const holes = [];
 
   for (const [key, value] of Object.entries(data)) {
     if (value === 24) {
