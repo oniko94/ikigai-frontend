@@ -7,7 +7,7 @@
     "backgroundImageAttachment": "scroll",
     "backgroundOpacity": 1,
     "cssVariables": {
-        "--sjs-font-family": "Open Sans",
+        "--sjs-font-family": "Canva Sans, sans-serif",
         "--sjs-font-size": "16px",
         "--sjs-corner-radius": "4px",
         "--sjs-base-unit": "8px",
@@ -91,7 +91,11 @@
         "--sjs-primary-forecolor-light": "rgba(255, 255, 255, 0.25)",
         "--sjs-special-red": "rgba(229, 10, 62, 1)",
         "--sjs-special-red-light": "rgba(229, 10, 62, 0.1)",
-        "--sjs-header-backcolor": "#f0e0d3"
+        "--sjs-font-pagetitle-family": "Haval, sans-serif",
+        "--sjs-font-pagetitle-weight": "800",
+        "--sjs-font-surveytitle-family": "Haval, sans-serif",
+        "--sjs-font-surveytitle-color": "rgba(171, 0, 32, 1)",
+        "--sjs-font-surveytitle-weight": "800"
     },
     "header": {
         "height": 0,
@@ -103,8 +107,8 @@
         "overlapEnabled": false,
         "logoPositionX": "left",
         "logoPositionY": "top",
-        "titlePositionX": "left",
-        "titlePositionY": "bottom",
+        "titlePositionX": "center",
+        "titlePositionY": "middle",
         "descriptionPositionX": "left",
         "descriptionPositionY": "bottom"
     },

@@ -10,10 +10,12 @@ import ThirdPhase from './pages/ThirdPhase.vue';
 const store = useStore();
 const components = [FirstPhase, SecondPhase, ThirdPhase];
 const CurrentPhase = computed(() => components[store.currentPhase]);
-
 </script>
 
 <template>
+  <div class="loader-overlay">
+    <div class="loader"></div>
+  </div>
   <component 
     :is="CurrentPhase"
     :key="store.currentPhase"

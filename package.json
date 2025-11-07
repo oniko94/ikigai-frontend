@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^14.0.0",
     "pinia": "^3.0.3",
     "survey-vue3-ui": "^2.3.10",
     "universal-cookie": "^8.0.1",
